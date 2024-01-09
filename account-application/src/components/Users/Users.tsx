@@ -9,7 +9,7 @@ import { useEffect, useState } from 'react';
 import { NewUser, User } from '../../utils/types';
 import UserResults from '../UserResults';
 import AddIcon from '@mui/icons-material/Add';
-import CreateUser from '../create-user';
+import CreateUser from '../CreateUser';
 import { AddUser, DeleteUser, GetUsers } from '../../api/UserApi';
 import { ButtonStyles } from '../../styles/ButtonStyles';
 import { ErrorContainer } from '../../styles/ErrorStyles';
