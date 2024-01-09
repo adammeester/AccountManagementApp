@@ -5,8 +5,8 @@ import {
   GridColumns,
   GridRenderCellParams
 } from '@mui/x-data-grid';
-import { User } from '../../../utils/types';
-import TableActions from '../../table-actions';
+import { User } from '../../utils/types';
+import TableActions from '../TableActions';
 
 const UserResultsStyles = styled('div')(({ theme }) => ({
   height: 400,

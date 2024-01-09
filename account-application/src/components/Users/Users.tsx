@@ -6,14 +6,14 @@ import {
   styled
 } from '@mui/material';
 import { useEffect, useState } from 'react';
-import { NewUser, User } from '../../../utils/types';
-import UserResults from '../user-results';
+import { NewUser, User } from '../../utils/types';
+import UserResults from '../UserResults';
 import AddIcon from '@mui/icons-material/Add';
 import CreateUser from '../create-user';
-import { AddUser, DeleteUser, GetUsers } from '../../../api/UserApi';
-import { ButtonStyles } from '../../../styles/ButtonStyles';
-import { ErrorContainer } from '../../../styles/ErrorStyles';
-import { ContentContainer } from '../../../styles/ContentStyles';
+import { AddUser, DeleteUser, GetUsers } from '../../api/UserApi';
+import { ButtonStyles } from '../../styles/ButtonStyles';
+import { ErrorContainer } from '../../styles/ErrorStyles';
+import { ContentContainer } from '../../styles/ContentStyles';
 
 const UsersContainer = styled('div')(({ theme }) => ({}));
 
@@ -33,6 +33,7 @@ const Users = () => {
     setShowUserForm(!showUserForm);
   };
 
+  //TODO
   const handleEdit = (user: User) => {
     return null;
   };

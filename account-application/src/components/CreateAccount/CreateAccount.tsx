@@ -1,11 +1,4 @@
-import {
-  Modal,
-  Fade,
-  IconButton,
-  Button,
-  TextField,
-  styled
-} from '@mui/material';
+import { Modal, Fade, IconButton, Button, TextField } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import SaveIcon from '@mui/icons-material/Save';
 import { useState } from 'react';
@@ -13,8 +6,8 @@ import {
   ModalContentContainer,
   ModalFooter,
   ModalHeader
-} from '../../../styles/ModalStyles';
-import { FormStyles } from '../../../styles/FormStyles';
+} from '../../styles/ModalStyles';
+import { FormStyles } from '../../styles/FormStyles';
 
 type CreateAccountProps = {
   isOpen: boolean;

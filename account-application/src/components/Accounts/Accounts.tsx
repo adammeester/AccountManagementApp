@@ -1,13 +1,13 @@
 import { Alert, Button, CircularProgress, Snackbar } from '@mui/material';
 import { useEffect, useState } from 'react';
-import { Account } from '../../../utils/types';
-import AccountResults from '../account-results';
+import { Account } from '../../utils/types';
+import AccountResults from '../AccountResults';
 import AddIcon from '@mui/icons-material/Add';
-import CreateAccount from '../create-account';
-import { AddAccount, GetAccounts } from '../../../api/AccountApi';
-import { ButtonStyles } from '../../../styles/ButtonStyles';
-import { ErrorContainer } from '../../../styles/ErrorStyles';
-import { ContentContainer } from '../../../styles/ContentStyles';
+import CreateAccount from '../CreateAccount';
+import { AddAccount, GetAccounts } from '../../api/AccountApi';
+import { ButtonStyles } from '../../styles/ButtonStyles';
+import { ErrorContainer } from '../../styles/ErrorStyles';
+import { ContentContainer } from '../../styles/ContentStyles';
 
 const Accounts = () => {
   const [accounts, setAccounts] = useState<Array<Account>>([]);

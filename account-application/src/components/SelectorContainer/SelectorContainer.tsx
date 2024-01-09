@@ -1,8 +1,8 @@
 import { styled, Tab, Tabs } from '@mui/material';
 import { useState } from 'react';
-import Accounts from '../account-components/accounts';
-import UserSearch from '../user-components/user-search';
-import Users from '../user-components/users';
+import Accounts from '../Accounts';
+import UserSearch from '../UserSearch';
+import Users from '../Users';
 
 const TabsContainer = styled('div')(({ theme }) => ({
   padding: theme.spacing(4),

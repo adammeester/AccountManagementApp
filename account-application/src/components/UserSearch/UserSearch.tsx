@@ -1,12 +1,12 @@
 import { Button, CircularProgress, styled, TextField } from '@mui/material';
 import { useState } from 'react';
-import { GetUser } from '../../../api/UserApi';
-import { User } from '../../../utils/types';
-import UserSearchResults from '../user-search-results';
+import { GetUser } from '../../api/UserApi';
+import { User } from '../../utils/types';
+import UserSearchResults from '../UserSearchResults';
 import PersonSearchIcon from '@mui/icons-material/PersonSearch';
-import { SearchContainer } from '../../../styles/FormStyles';
-import { ErrorContainer } from '../../../styles/ErrorStyles';
-import { ContentContainer } from '../../../styles/ContentStyles';
+import { SearchContainer } from '../../styles/FormStyles';
+import { ErrorContainer } from '../../styles/ErrorStyles';
+import { ContentContainer } from '../../styles/ContentStyles';
 
 const SearchRow = styled('div')(({ theme }) => ({
   justifyContent: 'center',
@@ -25,7 +25,6 @@ const UserSearch = () => {
     setIsLoading(true);
     try {
       const response = await GetUser(input);
-      console.log(response.data);
       setUser(response.data);
     } catch (err: any) {
       if (err.response.status === 400) {

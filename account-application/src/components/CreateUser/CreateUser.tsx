@@ -1,11 +1,8 @@
-import { Fade, IconButton, Modal, styled } from '@mui/material';
-import UserForm from '../user-form';
+import { Fade, IconButton, Modal } from '@mui/material';
+import UserForm from '../UserForm';
 import CloseIcon from '@mui/icons-material/Close';
-import { FormInputs, NewUser } from '../../../utils/types';
-import {
-  ModalContentContainer,
-  ModalHeader
-} from '../../../styles/ModalStyles';
+import { FormInputs, NewUser } from '../../utils/types';
+import { ModalContentContainer, ModalHeader } from '../../styles/ModalStyles';
 
 type CreateUserProps = {
   isOpen: boolean;

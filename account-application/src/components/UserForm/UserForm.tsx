@@ -1,8 +1,8 @@
-import { Button, FormControl, Input, InputLabel, styled } from '@mui/material';
-import useForm from '../../../utils/useForm';
+import { Button, FormControl, Input, InputLabel } from '@mui/material';
+import useForm from '../../utils/useForm';
 import SaveIcon from '@mui/icons-material/Save';
-import { FormInputs } from '../../../utils/types';
-import { FormFooter, FormStyles } from '../../../styles/FormStyles';
+import { FormInputs } from '../../utils/types';
+import { FormFooter, FormStyles } from '../../styles/FormStyles';
 
 type UserFormProps = {
   handleSubmit: (e: any, inputs: FormInputs) => void;

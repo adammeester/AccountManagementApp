@@ -1,5 +1,5 @@
 import { styled } from '@mui/material';
-import { User } from '../../../utils/types';
+import { User } from '../../utils/types';
 
 const UserContainer = styled('div')(({ theme }) => ({
   marginTop: theme.spacing(4),

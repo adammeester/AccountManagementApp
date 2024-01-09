@@ -1,7 +1,7 @@
 import { styled } from '@mui/material';
 import { DataGrid, gridClasses, GridRenderCellParams } from '@mui/x-data-grid';
-import { Account } from '../../../utils/types';
-import TableActions from '../../table-actions/TableActions';
+import { Account } from '../../utils/types';
+import TableActions from '../TableActions/TableActions';
 
 const AccountResultsStyles = styled('div')(({ theme }) => ({
   height: 400,
